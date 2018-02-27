@@ -10,14 +10,6 @@ gcloud container --project "project-test" clusters create "main" --zone "us-east
 
 kubectl apply -f .
 
-kubectl create -f helloworld-v1.yml
-kubectl create -f helloworld-v2.yml
-kubectl create -f echoservice.yml
-kubectl create -f ingress.yml
-kubectl create -f nginx-ingress-controller.yml
-
-kubectl describe ing helloworld-rules
-
 curl IP -H 'Host: helloworld-v1.example.com'
 
 curl IP -H 'Host: helloworld-v2.example.com'
