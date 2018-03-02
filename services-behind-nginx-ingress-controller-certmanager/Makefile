@@ -42,7 +42,7 @@ cluster3:
 
 cert-info:
 	@echo "Get certificate info for: " $(DOMAIN_NAME)
-	kubectl describe 30-certificate $(DOMAIN_NAME)
+	kubectl describe certificate $(DOMAIN_NAME)
 
 
 update:
