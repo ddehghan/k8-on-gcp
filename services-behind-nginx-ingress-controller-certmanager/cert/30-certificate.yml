@@ -10,9 +10,13 @@ spec:
     name: letsencrypt-staging-cluster-issuer
     kind: ClusterIssuer
   commonName: test1.example.com
+  dnsNames:
+      - test1.example.com
+      - test2.example.com
   acme:
     config:
     - http01:
         ingressClass: nginx
       domains:
       - test1.example.com
+      - test2.example.com

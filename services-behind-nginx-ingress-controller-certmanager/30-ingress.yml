@@ -19,3 +19,6 @@ spec:
   - secretName: test1.example.com-tls
     hosts:
     - test1.example.com
+  - secretName: test2.example.com-tls
+    hosts:
+    - test2.example.com
